@@ -1,17 +1,17 @@
 {
   "name": "pvtl/wp-safe-user-deletion",
   "description": "A must-use WordPress plugin that adds a double confirmation when deleting users and blocks deletion if the user has content that has not been reassigned to another user.",
+  "version": "1.0.0",
   "homepage": "https://github.com/pvtl/wp-safe-user-deletion",
-  "license": "Public",
+  "license": "MIT",
   "authors": [
     {
-      "name": "Erin Welch",
-      "email": "erin.w@pvtl.io",
+      "name": "Pivotal Agency",
       "homepage": "https://www.pivotalagency.com.au/"
     }
   ],
   "type": "wordpress-muplugin",
   "require": {
-    "php": ">=7.3"
+    "php": ">=7.4"
   }
 }
