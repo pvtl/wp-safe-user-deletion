@@ -58,6 +58,18 @@ composer config repositories.wp-safe-user-deletion git https://github.com/pvtl/w
 composer require pvtl/wp-safe-user-deletion
 ```
 
-## Author
+## Versioning
 
-Pivotal Agency – [https://pivotalagency.com.au](https://pivotalagency.com.au)
+_Do not manually create tags_.
+
+Versioning comprises of 2 things:
+
+- Wordpress plugin version
+    - The version number used by Wordpress on the plugins screen (and various other peices of functionality to track the version number)
+    - Controlled in `./wp-safe-user-deletion.php` by `* Version: x.x.x` (line 9)
+- Composer dependency version
+    - The version Composer uses to know which version of the plugin to install
+    - Controlled by Git tags
+
+Versioning for this plugin is automated using a Github Action (`./.github/workflows/version-update.yml`).
+To release a new version, simply change the `* Version: x.x.x` (line 10) in `./wp-safe-user-deletion.php` - the Github Action will take care of the rest.

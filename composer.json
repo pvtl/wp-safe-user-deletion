@@ -2,7 +2,7 @@
   "name": "pvtl/wp-safe-user-deletion",
   "description": "A must-use WordPress plugin that adds a double confirmation when deleting users and blocks deletion if the user has content that has not been reassigned to another user.",
   "homepage": "https://github.com/pvtl/wp-safe-user-deletion",
-  "license": "Private",
+  "license": "Public",
   "authors": [
     {
       "name": "Erin Welch",
