@@ -1,0 +1,1 @@
+# wp-safe-user-deletion
