@@ -46,30 +46,21 @@ If the user has at least one such item, deletion is blocked until content is rea
 - No additional PHP extensions or Composer dependencies.
 - Installed as a must-use plugin (`mu-plugins`); it is always active and does not appear in the Plugins list.
 
-## Installation into a Bedrock site
+## Installation
 
-#### Install
-
-```
-# 1. Get it ready (to use a repo outside of packagist)
-composer config repositories.wp-safe-user-deletion git https://github.com/pvtl/wp-safe-user-deletion
-
-# 2. Install the Plugin
+### Composer / Wordpress Bedrock
+```bash
 composer require pvtl/wp-safe-user-deletion
 ```
 
-## Versioning
+### Manual
+1. Upload plugin to `wp-content/plugins/wp-safe-user-deletion/`
+2. Activate plugin in WordPress admin
 
-_Do not manually create tags_.
+## Author
 
-Versioning comprises of 2 things:
+Pivotal Agency Pty Ltd
 
-- Wordpress plugin version
-    - The version number used by Wordpress on the plugins screen (and various other peices of functionality to track the version number)
-    - Controlled in `./wp-safe-user-deletion.php` by `* Version: x.x.x` (line 9)
-- Composer dependency version
-    - The version Composer uses to know which version of the plugin to install
-    - Controlled by Git tags
+## License
 
-Versioning for this plugin is automated using a Github Action (`./.github/workflows/version-update.yml`).
-To release a new version, simply change the `* Version: x.x.x` (line 10) in `./wp-safe-user-deletion.php` - the Github Action will take care of the rest.
+MIT
